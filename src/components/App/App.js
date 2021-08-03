@@ -1,18 +1,39 @@
+
+import { useEffect, useReducer } from "react";
 import { BrowserRouter as Router, Route , Switch} from "react-router-dom";
+import FireLoginStatus from "../../Lib/FireLoginStatus/FireLoginStatus";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import LandingPage from "../LandingPage/LandingPage";
 import Signin from "../Signin/Signin";
+import { ACTION, initState, reducer } from "../UseReducer/UseReducer";
 import './App.scss';
 
 function App() {
+  
+
+  let [state,dispatch]= useReducer(reducer,initState)
+
+  let [user]=FireLoginStatus()
+  useEffect(()=>{
+    dispatch({type:ACTION.USER_STATUS,payload:user?true:false})
+  },[user])
+
+
+
+
+  console.log(state)
+
   return (
     <Router>
     <div className="App">
-      <Header/>
+      <Header state={state} />
 
       <Switch>
-        <Route path="/signin" component={Signin} />
+
+        <Route path="/signin">
+          <Signin state={state} dispatch={dispatch}/>
+        </Route>
         <Route exact path="/" component={LandingPage} />
 
 

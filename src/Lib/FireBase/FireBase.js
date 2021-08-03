@@ -1,17 +1,17 @@
 import firebase from "firebase";
 import "firebase/auth"
-const FireBase = () => {
+
 
 
 
   var firebaseConfig = {
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_APP_FIREBASE_AUTHDOMAIN,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_ID,
-    appId: process.env.REACT_APP_FIREBASE_APP_ID,
-    measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
+    apiKey: "AIzaSyCZS8SFk2qPoXsLdxTv37DVraKPI65Y1JU",
+    authDomain: "web-dev-course-dd783.firebaseapp.com",
+    projectId: "web-dev-course-dd783",
+    storageBucket:"web-dev-course-dd783.appspot.com",
+    messagingSenderId: "915456601499",
+    appId: "1:915456601499:web:843b620dc14c164ca9453e",
+    measurementId: "G-F7JESYXQQW"
   };
   // Initialize Firebase
    const firebaseApp = firebase.initializeApp(firebaseConfig);
@@ -21,8 +21,7 @@ const FireBase = () => {
 
   const auth = firebase.auth()
 
+  export {auth}
 
-  return [];
-}
  
-export default FireBase;
+export default database;

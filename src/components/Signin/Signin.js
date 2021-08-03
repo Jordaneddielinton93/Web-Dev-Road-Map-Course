@@ -1,8 +1,37 @@
 import "./Signin.scss"
 import { AiOutlineMail } from 'react-icons/ai';
 import { RiLockPasswordLine } from 'react-icons/ri';
+import { useRef } from "react";
+import {auth} from "../../Lib/FireBase/FireBase";
+
 
 const Signin = () => {
+
+
+  const emailRef=useRef(null)
+  const PasswordRef=useRef(null)
+
+  function signUp(e){
+    e.preventDefault()
+    auth.createUserWithEmailAndPassword(
+      emailRef.current.value,
+      PasswordRef.current.value
+    ).then(User=>{
+      console.log(User)
+    }).catch(err=>console.log(err))
+  }
+
+  function signIn(e){
+    e.preventDefault()
+    auth.signInWithEmailAndPassword(
+      emailRef.current.value,
+      PasswordRef.current.value
+    ).then(User=>{
+      console.log(User)
+    }).catch(err=>console.log(err))
+  }
+
+
   return ( 
     <main className="Signin">
       <div className="Signin__Container">
@@ -12,16 +41,21 @@ const Signin = () => {
         <form>
           <label htmlFor="email">
           <AiOutlineMail className="icons"/>
-            <input name="email" type="email" />
+            <input ref={emailRef} name="email" type="email" />
           </label>
 
           <label htmlFor="Password">
             <RiLockPasswordLine className="icons"/>
             
-            <input name="Password" type="password" />
+            <input ref={PasswordRef} name="Password" type="password" />
           </label>
 
-          <button>Log in</button>
+          <button onClick={signIn}
+          className="Login">
+            Log in</button>
+          <button onClick={signUp}
+          className="signUp"
+          >Sign up</button>
         </form>
       </div>
       

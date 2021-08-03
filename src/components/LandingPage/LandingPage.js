@@ -14,7 +14,7 @@ const LandingPage = () => {
           <p className="LandingP__Hero__RoadMap-title2">Welcome To Your Path</p>
           <div className="LandingP__Hero__RoadMap__cont">
             <ButtonTakeStep/>
-            <img src={signPost} alt="" srcset="" />
+            <img srcSet={signPost} alt="" srcset="" />
 
           </div>
         </div>
