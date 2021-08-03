@@ -1,0 +1,64 @@
+@import "../App/App.scss";
+
+.LandingP{
+  height: 91vh;
+  width: 100%;
+  &__Hero{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+    border-bottom: thick solid $lightGrey;
+    background-color: $whiteGrey;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    &__RoadMap{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 5vw;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+      justify-content: flex-end;
+      height: 70%;
+      width: 600px;
+      background-color: $lightGrey;
+
+      &-title{
+        font-size: 3rem;
+        text-align: left;
+        width: 90%;
+      }
+      &-title2{
+        font-size: 2rem;
+        text-align: left;
+        width: 90%;
+
+      }
+      &__cont{
+        display: flex;
+        height: 50%;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        & img{
+          max-height:100% ;
+        }
+      }
+
+    }
+
+
+  }
+
+  &__Slider{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $whiteGrey;
+    width: 100%;
+    overflow-x: hidden;
+    height: 36vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+}
