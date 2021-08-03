@@ -7,7 +7,7 @@ export const ACTION={
 
 
 export const initState={
-  statusColor:false
+  userStatus:false
 }
 
 
@@ -21,7 +21,7 @@ export function reducer(state,action){
 
       return {
         ...state,
-        statusColor:action.payload?true:false
+        userStatus:action.payload?true:false
       }
       
     default:

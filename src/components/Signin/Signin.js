@@ -1,11 +1,13 @@
 import "./Signin.scss"
+import { useHistory } from 'react-router-dom';
 import { AiOutlineMail } from 'react-icons/ai';
 import { RiLockPasswordLine } from 'react-icons/ri';
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import {auth} from "../../Lib/FireBase/FireBase";
+import LoadingPage from "../LoadingPage/LoadingPage";
 
 
-const Signin = () => {
+const Signin = ({state,USER}) => {
 
 
   const emailRef=useRef(null)
@@ -31,20 +33,42 @@ const Signin = () => {
     }).catch(err=>console.log(err))
   }
 
+  const history = useHistory();
+  // function changePage(){
+  //   history.push('/')
+
+
+  // }
+useEffect(()=>{
+
+  if(state.userStatus===true){
+    setTimeout(()=>{
+      history.push('/')
+    },2000)
+  }
+
+},[state.userStatus])
+
+    
+
+
+
 
   return ( 
     <main className="Signin">
+      {state.userStatus?<LoadingPage/>:<></>}
+      
       <div className="Signin__Container">
 
         <h1 className="Signin__Container-title">Log In to Your Account</h1>
 
         <form>
-          <label htmlFor="email">
+          <label htmlFor="email" style={state.userStatus?{border:"thick solid lime"}:{border:"thin solid red"}}>
           <AiOutlineMail className="icons"/>
             <input ref={emailRef} name="email" type="email" />
           </label>
 
-          <label htmlFor="Password">
+          <label htmlFor="Password" style={state.userStatus?{border:"thick solid lime"}:{border:"thin solid #343F4B"}}>
             <RiLockPasswordLine className="icons"/>
             
             <input ref={PasswordRef} name="Password" type="password" />

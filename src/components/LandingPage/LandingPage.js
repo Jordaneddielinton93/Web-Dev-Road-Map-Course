@@ -3,6 +3,8 @@ import ButtonTakeStep from "../ButtonTakeStep/ButtonTakeStep";
 import Slider from "../Slider/Slider"
 import "./LandingPage.scss"
 
+
+
 import html from "../../Images/Html.jpg"
 const LandingPage = () => {
   return ( 
@@ -13,8 +15,8 @@ const LandingPage = () => {
           <h2 className="LandingP__Hero__RoadMap-title">Web Dev Road Map</h2>
           <p className="LandingP__Hero__RoadMap-title2">Welcome To Your Path</p>
           <div className="LandingP__Hero__RoadMap__cont">
-            <ButtonTakeStep/>
-            <img srcSet={signPost} alt="" srcset="" />
+            <ButtonTakeStep />
+            <img srcSet={signPost} alt="direction post"  />
 
           </div>
         </div>

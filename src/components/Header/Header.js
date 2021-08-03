@@ -30,7 +30,9 @@ const Header = ({state}) => {
       </div>
 
 
-      <h1 className="header__Login">
+      <h1 className="header__Login"
+      style={state.userStatus?{display:"none"}:{display:"block"}}
+      >
         <Link to="/signin">
         Login
         </Link>
@@ -39,7 +41,7 @@ const Header = ({state}) => {
 
       <div className="header__Dropdown">
       <div 
-      style={state.statusColor?{border:"thick solid lime"}:{border:"thin solid #343F4B"}}
+      style={state.userStatus?{border:"thick solid lime"}:{border:"thin solid #343F4B"}}
       className="header__profileImg">
       <FcCustomerSupport/>
       </div>

@@ -1,10 +1,12 @@
 import "./ButtonTakeStep.scss"
+import { BrowserRouter, Route, Link } from "react-router-dom";
+
 const ButtonTakeStep = () => {
 
   return ( 
-    <button className="ButtonTakeStep">
+    <Link to="./RoadMap"><button  className="ButtonTakeStep">
       Take Your Step
-    </button>
+    </button></Link>
    );
 }
  

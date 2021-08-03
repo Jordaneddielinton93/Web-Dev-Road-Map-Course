@@ -5,6 +5,7 @@ import FireLoginStatus from "../../Lib/FireLoginStatus/FireLoginStatus";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import LandingPage from "../LandingPage/LandingPage";
+import RoadMap from "../RoadMap/RoadMap";
 import Signin from "../Signin/Signin";
 import { ACTION, initState, reducer } from "../UseReducer/UseReducer";
 import './App.scss';
@@ -27,14 +28,16 @@ function App() {
   return (
     <Router>
     <div className="App">
-      <Header state={state} />
+      <Header state={state} USER={user}/>
 
       <Switch>
 
         <Route path="/signin">
           <Signin state={state} dispatch={dispatch}/>
         </Route>
+        
         <Route exact path="/" component={LandingPage} />
+        <Route exact path="/RoadMap" component={RoadMap} />
 
 
 
