@@ -1,0 +1,36 @@
+@import "../App/App.scss";
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  width: 200px;
+  height: 100%;
+  overflow: scroll;
+  background-color: $mediumGrey;
+  & .catagoriesCont{
+    cursor: pointer;
+    padding-top: 10px;
+    font-size: 1.3rem;
+    width: 95%;
+    &-title{
+      background-color:$lightGrey;
+
+      &:hover{
+        background-color: $Purple;
+      }
+    }
+    
+    & ul{
+      display: block;
+      text-align: left;
+      font-size: 1.2rem;
+      & li:hover {
+        background-color: $Purple;
+      }
+
+    }
+  }
+  
+
+}

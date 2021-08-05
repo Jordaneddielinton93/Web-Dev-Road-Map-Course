@@ -2,6 +2,7 @@
 import { useEffect, useReducer } from "react";
 import { BrowserRouter as Router, Route , Switch} from "react-router-dom";
 import FireLoginStatus from "../../Lib/FireLoginStatus/FireLoginStatus";
+import Catagories from "../Catagories/Catagories";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import LandingPage from "../LandingPage/LandingPage";
@@ -38,8 +39,7 @@ function App() {
         
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/RoadMap" component={RoadMap} />
-
-
+        <Route exact path="/Categories" component={Catagories}/>
 
 
       </Switch>

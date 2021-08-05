@@ -8,12 +8,14 @@ const Header = ({state}) => {
     <header className="header">
 
       <h1 className="header__Logo">
-        <Link to ="./" style={{color:"black"}}>Jord Linton</Link>
+        <Link to ="./" style={{color:"black"}}>School Of Code</Link>
         
       </h1>
       
       <div className="header__Dropdown">
-        <p className="header__Dropdown__Categories">Categories</p>
+        <Link to="./Categories">
+          <p className="header__Dropdown__Categories">Categories</p>
+        </Link> 
         <ul className="header__Dropdown__UList">
           <li className="header__Dropdown__UList-li">HTML</li>
           <li className="header__Dropdown__UList-li">CSS</li>
