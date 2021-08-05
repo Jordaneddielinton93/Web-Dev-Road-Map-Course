@@ -1,11 +1,13 @@
 
-import { useEffect, useReducer } from "react";
+import { useContext, useEffect, useReducer } from "react";
 import { BrowserRouter as Router, Route , Switch} from "react-router-dom";
 import FireLoginStatus from "../../Lib/FireLoginStatus/FireLoginStatus";
 import Catagories from "../Catagories/Catagories";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import LandingPage from "../LandingPage/LandingPage";
+
+
 import RoadMap from "../RoadMap/RoadMap";
 import Signin from "../Signin/Signin";
 import { ACTION, initState, reducer } from "../UseReducer/UseReducer";
@@ -16,6 +18,7 @@ function App() {
 
   let [state,dispatch]= useReducer(reducer,initState)
 
+  
   let [user]=FireLoginStatus()
   useEffect(()=>{
     dispatch({type:ACTION.USER_STATUS,payload:user?true:false})
@@ -29,8 +32,8 @@ function App() {
   return (
     <Router>
     <div className="App">
-      <Header state={state} USER={user}/>
-
+      <Header state={state} dispatch={dispatch} />
+      
       <Switch>
 
         <Route path="/signin">
@@ -39,12 +42,13 @@ function App() {
         
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/RoadMap" component={RoadMap} />
-        <Route exact path="/Categories" component={Catagories}/>
+        <Route exact path="/Categories">
+          <Catagories state={state}/>
+        </Route>
 
 
       </Switch>
       <Footer/>
-
     </div>
     </Router>
 

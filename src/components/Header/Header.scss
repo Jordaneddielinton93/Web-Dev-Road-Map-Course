@@ -1,13 +1,17 @@
 @import "../App/App.scss";
-
-.header{
-  display: flex;
-  height: 8vh;
+.headerFixed{
+  height: 9vh;
   width: 100%;
+}
+.header{
+  position: fixed;
+  display: flex;
+  height: 9vh;
+  width: 1200px;
   background-color: $lightGrey;
   justify-content: space-around;
   align-items: center;
-
+  z-index: 20;
 
   &__Dropdown{
     display: flex;

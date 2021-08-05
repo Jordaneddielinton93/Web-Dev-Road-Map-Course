@@ -1,12 +1,17 @@
 import "./Header.scss"
+import { ACTION } from "../UseReducer/UseReducer";
 import {FcCustomerSupport,FcSearch} from 'react-icons/fc';
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import { auth } from "../../Lib/FireBase/FireBase";
 
-const Header = ({state}) => {
+const Header = ({state,dispatch}) => {
+  
+
   return ( 
+    <header className="headerFixed">
     <header className="header">
 
+      
       <h1 className="header__Logo">
         <Link to ="./" style={{color:"black"}}>School Of Code</Link>
         
@@ -17,12 +22,31 @@ const Header = ({state}) => {
           <p className="header__Dropdown__Categories">Categories</p>
         </Link> 
         <ul className="header__Dropdown__UList">
-          <li className="header__Dropdown__UList-li">HTML</li>
-          <li className="header__Dropdown__UList-li">CSS</li>
-          <li className="header__Dropdown__UList-li">Sass</li>
-          <li className="header__Dropdown__UList-li">JavaScript</li>
-          <li className="header__Dropdown__UList-li">React</li>
-          <li className="header__Dropdown__UList-li">Firebase</li>
+
+          <li 
+          onClick={()=>dispatch({type:ACTION.CHOOSEN_PAGE,payload:0})}
+          className="header__Dropdown__UList-li">HTML</li>
+
+          <li
+          onClick={()=>dispatch({type:ACTION.CHOOSEN_PAGE,payload:4})}
+          className="header__Dropdown__UList-li">CSS</li>
+
+          <li onClick={()=>dispatch({type:ACTION.CHOOSEN_PAGE,payload:8})}
+          className="header__Dropdown__UList-li">Sass</li>
+
+          <li
+          onClick={()=>dispatch({type:ACTION.CHOOSEN_PAGE,payload:12})}
+          className="header__Dropdown__UList-li">JavaScript</li>
+
+          <li 
+          onClick={()=>dispatch({type:ACTION.CHOOSEN_PAGE,payload:18})}
+          className="header__Dropdown__UList-li">React</li>
+
+          <li onClick={()=>dispatch({type:ACTION.CHOOSEN_PAGE,payload:21})}
+          className="header__Dropdown__UList-li">Firebase</li>
+
+          <li onClick={()=>dispatch({type:ACTION.CHOOSEN_PAGE,payload:24})}
+          className="header__Dropdown__UList-li">CodeWars</li>
         </ul>
       </div>
 
@@ -48,15 +72,22 @@ const Header = ({state}) => {
       <FcCustomerSupport/>
       </div>
         <ul className="header__Dropdown__UList">
-          <li className="header__Dropdown__UList-li"
-          onClick={()=>auth.signOut()}
-          >Sign Out</li>
+          <li 
+          className="header__Dropdown__UList-li"
+          onClick={()=>auth.signOut()}>
+            Sign Out
+          </li>
+          
+          <li className="header__Dropdown__UList-li">
+            Settings
+          </li>
           
         </ul>
       </div>
 
       
 
+    </header>
     </header>
    );
 }
