@@ -135,7 +135,8 @@ export const CategoriesApi=[
     title1:"Codewars",
     title:"Kata 4",
     video:<iframe width="840" height="472.5" src="https://www.youtube.com/embed/TXbdlM9b5is" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
-    discription:"Code Wars is a great way to level up your skills ranking from easy Kata8 to very hard kata1, the most i have been able to do is a kata 4 which is on my youtube channel"
+    discription:["Code Wars is a great way to level up your skills ranking from easy Kata8 to very hard kata 1, the most i have been able to do is a kata 4 which is on my youtube channel.",<br></br>,<br></br>,
+    <i>Codewars is an educational community for computer programming. On the platform, software developers train on programming challenges known as kata. These discrete programming exercises train a range of skills in a variety of programming languages, and are completed within an online integrated development environment.</i>]
   },
 
 ]
