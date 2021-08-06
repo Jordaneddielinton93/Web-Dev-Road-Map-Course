@@ -1,5 +1,5 @@
 
-import { useContext, useEffect, useReducer } from "react";
+import { useEffect, useReducer } from "react";
 import { BrowserRouter as Router, Route , Switch} from "react-router-dom";
 import FireLoginStatus from "../../Lib/FireLoginStatus/FireLoginStatus";
 import Catagories from "../Catagories/Catagories";
@@ -26,8 +26,10 @@ function App() {
   console.log(state)
 
   return (
+
     <Router>
     <div className="App">
+
     <pageWrapper.Provider value={{state,dispatch}}>
 
       <Header/>

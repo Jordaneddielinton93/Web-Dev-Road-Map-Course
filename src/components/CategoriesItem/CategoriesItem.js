@@ -19,7 +19,7 @@ const CategoriesItem = () => {
             BEGINNER'S GUIDE: {item.title}
           </h1>
           {item.video}
-          <p>{item.discription}</p>
+          <p className="CategoriesItem--discription">{item.discription}</p>
         </main>):<></>
     })
   

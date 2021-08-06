@@ -24,7 +24,7 @@ const Header = () => {
           <p className="header__Dropdown__Categories">Categories</p>
         </Link> 
         <ul className="header__Dropdown__UList">
-
+        <Link to="./Categories">
           <li 
           onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:0})}
           className="header__Dropdown__UList-li">HTML</li>
@@ -49,6 +49,7 @@ const Header = () => {
 
           <li onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:24})}
           className="header__Dropdown__UList-li">CodeWars</li>
+          </Link>
         </ul>
       </div>
 

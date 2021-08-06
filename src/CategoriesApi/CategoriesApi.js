@@ -99,7 +99,7 @@ export const CategoriesApi=[
     title1:"REACT",
     title:"useState",
     video:<iframe width="840" height="472.5" src="https://www.youtube.com/embed/5zYBeaUq86U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
-    discription:""
+    discription:"useState is a Hook that allows you to have state variables in functional components. You pass the initial state to this function and it returns a variable with the current state value (not necessarily the initial state) and another function to update this value."
   },
   {
     page:19,
