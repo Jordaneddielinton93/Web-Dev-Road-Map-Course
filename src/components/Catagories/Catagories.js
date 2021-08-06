@@ -1,11 +1,11 @@
 import CatagoriesSidebar from "../CatagoriesSidebar/CatagoriesSidebar"
 import CategoriesItem from "../CategoriesItem/CategoriesItem"
 import "./Catagories.scss"
-const Catagories = ({state}) => {
+const Catagories = () => {
   return ( 
     <main className="Catagories">
-      <CatagoriesSidebar state={state} />
-      <CategoriesItem state={state} />
+      <CatagoriesSidebar />
+      <CategoriesItem />
     </main>
    );
 }

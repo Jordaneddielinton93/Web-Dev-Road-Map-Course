@@ -1,6 +1,6 @@
 
 import "./CatagoriesSidebar.scss"
-const CatagoriesSidebar = ({state}) => {
+const CatagoriesSidebar = () => {
 
   // let [openCat,SetOpenCat]=useState("none")
 

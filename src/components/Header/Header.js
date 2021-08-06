@@ -3,9 +3,11 @@ import { ACTION } from "../UseReducer/UseReducer";
 import {FcCustomerSupport,FcSearch} from 'react-icons/fc';
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import { auth } from "../../Lib/FireBase/FireBase";
-
-const Header = ({state,dispatch}) => {
+import { pageWrapper } from "../App/App";
+import { useContext } from "react";
+const Header = () => {
   
+  let stateObj = useContext(pageWrapper)
 
   return ( 
     <header className="headerFixed">
@@ -24,28 +26,28 @@ const Header = ({state,dispatch}) => {
         <ul className="header__Dropdown__UList">
 
           <li 
-          onClick={()=>dispatch({type:ACTION.CHOOSEN_PAGE,payload:0})}
+          onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:0})}
           className="header__Dropdown__UList-li">HTML</li>
 
           <li
-          onClick={()=>dispatch({type:ACTION.CHOOSEN_PAGE,payload:4})}
+          onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:4})}
           className="header__Dropdown__UList-li">CSS</li>
 
-          <li onClick={()=>dispatch({type:ACTION.CHOOSEN_PAGE,payload:8})}
+          <li onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:8})}
           className="header__Dropdown__UList-li">Sass</li>
 
           <li
-          onClick={()=>dispatch({type:ACTION.CHOOSEN_PAGE,payload:12})}
+          onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:12})}
           className="header__Dropdown__UList-li">JavaScript</li>
 
           <li 
-          onClick={()=>dispatch({type:ACTION.CHOOSEN_PAGE,payload:18})}
+          onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:18})}
           className="header__Dropdown__UList-li">React</li>
 
-          <li onClick={()=>dispatch({type:ACTION.CHOOSEN_PAGE,payload:21})}
+          <li onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:21})}
           className="header__Dropdown__UList-li">Firebase</li>
 
-          <li onClick={()=>dispatch({type:ACTION.CHOOSEN_PAGE,payload:24})}
+          <li onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:24})}
           className="header__Dropdown__UList-li">CodeWars</li>
         </ul>
       </div>
@@ -57,7 +59,7 @@ const Header = ({state,dispatch}) => {
 
 
       <h1 className="header__Login"
-      style={state.userStatus?{display:"none"}:{display:"block"}}
+      style={stateObj.state.userStatus?{display:"none"}:{display:"block"}}
       >
         <Link to="/signin">
         Login
@@ -67,7 +69,7 @@ const Header = ({state,dispatch}) => {
 
       <div className="header__Dropdown">
       <div 
-      style={state.userStatus?{border:"thick solid lime"}:{border:"thin solid #343F4B"}}
+      style={stateObj.state.userStatus?{border:"thick solid lime"}:{border:"thin solid #343F4B"}}
       className="header__profileImg">
       <FcCustomerSupport/>
       </div>

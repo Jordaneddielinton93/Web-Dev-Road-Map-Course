@@ -5,9 +5,11 @@ import { RiLockPasswordLine } from 'react-icons/ri';
 import { useEffect, useRef } from "react";
 import {auth} from "../../Lib/FireBase/FireBase";
 import LoadingPage from "../LoadingPage/LoadingPage";
+import { useContext } from "react";
+import { pageWrapper } from "../App/App";
 
-
-const Signin = ({state,USER}) => {
+const Signin = () => {
+  let stateObj = useContext(pageWrapper)
 
 
   const emailRef=useRef(null)
@@ -41,13 +43,13 @@ const Signin = ({state,USER}) => {
   // }
 useEffect(()=>{
 
-  if(state.userStatus===true){
+  if(stateObj.state.userStatus===true){
     setTimeout(()=>{
       history.push('/')
     },2000)
   }
 
-},[state.userStatus])
+},[stateObj.state.userStatus])
 
     
 
@@ -56,19 +58,19 @@ useEffect(()=>{
 
   return ( 
     <main className="Signin">
-      {state.userStatus?<LoadingPage/>:<></>}
+      {stateObj.state.userStatus?<LoadingPage/>:<></>}
       
       <div className="Signin__Container">
 
         <h1 className="Signin__Container-title">Log In to Your Account</h1>
 
         <form>
-          <label htmlFor="email" style={state.userStatus?{border:"thick solid lime"}:{border:"thin solid red"}}>
+          <label htmlFor="email" style={stateObj.state.userStatus?{border:"thick solid lime"}:{border:"4px solid red"}}>
           <AiOutlineMail className="icons"/>
             <input ref={emailRef} name="email" type="email" />
           </label>
 
-          <label htmlFor="Password" style={state.userStatus?{border:"thick solid lime"}:{border:"thin solid #343F4B"}}>
+          <label htmlFor="Password" style={stateObj.state.userStatus?{border:"thick solid lime"}:{border:"thin solid #343F4B"}}>
             <RiLockPasswordLine className="icons"/>
             
             <input ref={PasswordRef} name="Password" type="password" />
