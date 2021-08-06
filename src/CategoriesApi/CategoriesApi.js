@@ -105,14 +105,14 @@ export const CategoriesApi=[
     page:19,
     title1:"REACT",
     title:"useEffect",
-    video:<iframe width="840" height="472.5" src="https://www.youtube.com/embed/5zYBeaUq86U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+    video:<iframe width="840" height="472.5" src="https://www.youtube.com/embed/3KuRSYjHX18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
     discription:""
   },
   {
     page:20,
     title1:"REACT",
     title:"useReducer",
-    video:<iframe width="840" height="472.5" src="https://www.youtube.com/embed/5zYBeaUq86U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+    video:<iframe width="840" height="472.5" src="https://www.youtube.com/embed/Q3-l8zmP9Xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
     discription:""
   },
   {
