@@ -69,36 +69,43 @@ export const CategoriesApi=[
     page:11,
     title1:"SASS",
     title:"Variables",
+    discription:"Sass variables are simple: you assign a value to a name that begins with $ , and then you can refer to that name instead of the value itself. ... Unlike a property, which can only be declared in a style rule or at-rule, variables can be declared anywhere you want. To use a variable, just include it in a value."
   },
   {
     page:12,
     title1:"SASS",
     title:"Functions",
+    discription:"Functions allow you to define complex operations on SassScript values that you can re-use throughout your stylesheet. ... A function's name can be any Sass identifier. It can only contain universal statements, as well as the @return at-rule which indicates the value to use as the result of the function call."
   },
   {
     page:13,
-    title1:"SASS",
+    title1:"JavaScript",
     title:"DataTypes",
+    discription:"In Javascript, there are five basic, or primitive, types of data. The five most basic types of data are strings, numbers, booleans, undefined, and null. We refer to these as primitive data types."
   },
   {
     page:14,
-    title1:"SASS",
+    title1:"JavaScript",
     title:"Classes",
+    discription:"Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are not shared with ES5 class-like semantics."
   },
   {
     page:15,
-    title1:"SASS",
+    title1:"JavaScript",
     title:"Variables",
+    discription:"var declarations are globally scoped or function scoped while let and const are block scoped. var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared. They are all hoisted to the top of their scope."
   },
   {
     page:16,
     title1:"REACT",
     title:"State",
+    discription:"What is State? The state is an instance of React Component Class can be defined as an object of a set of observable properties that control the behavior of the component. In other words, the State of a component is an object that holds some information that may change over the lifetime of the component."
   },
   {
     page:17,
     title1:"REACT",
     title:"JSX",
+    discription:"JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes it easier to write and add HTML in React."
   },
   {
     page:18,
@@ -112,21 +119,21 @@ export const CategoriesApi=[
     title1:"REACT",
     title:"useEffect",
     video:<iframe width="840" height="472.5" src="https://www.youtube.com/embed/3KuRSYjHX18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
-    discription:""
+    discription:"What does useEffect do? By using this Hook, you tell React that your component needs to do something after render. React will remember the function you passed (we'll refer to it as our “effect”), and call it later after performing the DOM updates. They also have dependences for the use effect to watch out for specific changes"
   },
   {
     page:20,
     title1:"REACT",
     title:"useReducer",
     video:<iframe width="840" height="472.5" src="https://www.youtube.com/embed/Q3-l8zmP9Xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
-    discription:""
+    discription:"useReducer is usually preferable to useState when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one. useReducer also lets you optimize performance for components that trigger deep updates because you can pass dispatch down instead of callbacks."
   },
   {
     page:21,
     title1:"REACT",
     title:"useContext",
     video:<iframe width="840" height="472.5" src="https://www.youtube.com/embed/Zw_Pl0kHemI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
-    discription:""
+    discription:"useContext” hook is used to create common data that can be accessed throughout the component hierarchy without passing the props down manually to each level. Context defined will be available to all the child components without involving “props”."
   },
   {
     page:22,

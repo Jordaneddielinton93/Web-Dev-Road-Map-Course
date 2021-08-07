@@ -31,9 +31,7 @@ const LandingPage = () => {
       </section>
       <section className="LandingP__Slider">
 
-        <Slider 
-        title="HTML" />
-
+        <Slider title="HTML" />
         <Slider title="Css" />
         <Slider title="React" />
         <Slider title="FireBase" />
