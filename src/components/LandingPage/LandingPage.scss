@@ -94,7 +94,7 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
   .LandingP{
   
     width: 100%;
@@ -113,6 +113,37 @@
       &__RoadMap{
         margin-left: 0;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .LandingP{
+    &__Hero{
+      justify-content: center;
+      max-width: 100%;
+      width: 100vw;
+      &--image{
+        max-width: 100%;
+        
+      &-img{
+      display: none;
+      }
+      }
+      &__RoadMap{
+        margin-left: 0;
+      }
+      &__RoadMap{
+        &-title{
+          font-size: 1rem;
+
+        }
+        &-title2{
+          font-size: 2rem;
+
+        }
+      }
+       
     }
   }
 }

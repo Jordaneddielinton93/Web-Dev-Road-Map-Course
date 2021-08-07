@@ -56,6 +56,30 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+
+@media only screen and (max-width: 600px) {
+  .Slider{
+    &__imgCont{
+
+      font-size: 1.2rem;
+   
+    }
+    &__textCont{
+
   
+      &-text1{
+
+        font-size: 0.7rem;
+
+        padding: 2px;
+  
+      }
+      &-text2{
+        text-align: left;
+        margin-left: 10px;
+        font-size: 1.3rem;
+
+      }
+    }
+  }
 }
