@@ -4,7 +4,7 @@ export const CategoriesApi=[
     page:0,
     title1:"HTML",
     title:"Tags",
-    video:<iframe width="840" height="472.5" src="https://www.youtube.com/embed/kGW8Al_cga4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+    video:<iframe width="90%" height="472.5" src="https://www.youtube.com/embed/kGW8Al_cga4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
     discription:"HTML tags are like keywords which defines that how web browser will format and display the content. With the help of tags, a web browser can distinguish between an HTML content and a simple content. HTML tags contain three main parts: opening tag, content and closing tag. But some HTML tags are unclosed tags."
   },
   {
@@ -111,28 +111,28 @@ export const CategoriesApi=[
     page:18,
     title1:"REACT",
     title:"useState",
-    video:<iframe width="840" height="472.5" src="https://www.youtube.com/embed/5zYBeaUq86U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+    video:<iframe width="90%" height="472.5" src="https://www.youtube.com/embed/5zYBeaUq86U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
     discription:"useState is a Hook that allows you to have state variables in functional components. You pass the initial state to this function and it returns a variable with the current state value (not necessarily the initial state) and another function to update this value."
   },
   {
     page:19,
     title1:"REACT",
     title:"useEffect",
-    video:<iframe width="840" height="472.5" src="https://www.youtube.com/embed/3KuRSYjHX18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+    video:<iframe width="90%" height="472.5" src="https://www.youtube.com/embed/3KuRSYjHX18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
     discription:"What does useEffect do? By using this Hook, you tell React that your component needs to do something after render. React will remember the function you passed (we'll refer to it as our “effect”), and call it later after performing the DOM updates. They also have dependences for the use effect to watch out for specific changes"
   },
   {
     page:20,
     title1:"REACT",
     title:"useReducer",
-    video:<iframe width="840" height="472.5" src="https://www.youtube.com/embed/Q3-l8zmP9Xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+    video:<iframe width="90%" height="472.5" src="https://www.youtube.com/embed/Q3-l8zmP9Xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
     discription:"useReducer is usually preferable to useState when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one. useReducer also lets you optimize performance for components that trigger deep updates because you can pass dispatch down instead of callbacks."
   },
   {
     page:21,
     title1:"REACT",
     title:"useContext",
-    video:<iframe width="840" height="472.5" src="https://www.youtube.com/embed/Zw_Pl0kHemI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+    video:<iframe width="90%" height="472.5" src="https://www.youtube.com/embed/Zw_Pl0kHemI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
     discription:"useContext” hook is used to create common data that can be accessed throughout the component hierarchy without passing the props down manually to each level. Context defined will be available to all the child components without involving “props”."
   },
   {
@@ -154,7 +154,7 @@ export const CategoriesApi=[
     page:25,
     title1:"Codewars",
     title:"Kata 4",
-    video:<iframe width="840" height="472.5" src="https://www.youtube.com/embed/TXbdlM9b5is" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+    video:<iframe width="90%" height="472.5" src="https://www.youtube.com/embed/TXbdlM9b5is" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
     discription:["Code Wars is a great way to level up your skills ranking from easy Kata8 to very hard kata 1, the most i have been able to do is a kata 4 which is on my youtube channel.",<br></br>,<br></br>,
     <i>Codewars is an educational community for computer programming. On the platform, software developers train on programming challenges known as kata. These discrete programming exercises train a range of skills in a variety of programming languages, and are completed within an online integrated development environment.</i>]
   },
