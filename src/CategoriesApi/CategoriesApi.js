@@ -4,18 +4,20 @@ export const CategoriesApi=[
     page:0,
     title1:"HTML",
     title:"Tags",
-    video:"",
+    video:<iframe width="840" height="472.5" src="https://www.youtube.com/embed/kGW8Al_cga4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
     discription:"HTML tags are like keywords which defines that how web browser will format and display the content. With the help of tags, a web browser can distinguish between an HTML content and a simple content. HTML tags contain three main parts: opening tag, content and closing tag. But some HTML tags are unclosed tags."
   },
   {
     page:1,
     title1:"HTML",
-    title:"Elements"
+    title:"Elements",
+    discription:"An HTML element is a type of HTML document component, one of several types of HTML nodes. HTML document is composed of a tree of simple HTML nodes, such as text nodes, and HTML elements, which add semantics and formatting to parts of document. Each element can have HTML attributes specified."
   },
   {
     page:2,
     title1:"HTML",
     title:"Atrributes",
+    discription:"Attributes define additional characteristics or properties of the element such as width and height of an image. Attributes are always specified in the start tag (or opening tag) and usually consists of name/value pairs like name='value' . Attribute values should always be enclosed in quotation marks."
   },
   {
     page:3,
@@ -32,11 +34,13 @@ export const CategoriesApi=[
     page:5,
     title1:"CSS",
     title:"Display",
+    discription:"The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex. Formally, the display property sets an element's inner and outer display types."
   },
   {
     page:6,
     title1:"CSS",
     title:"Variables",
+    discription:"Custom properties (sometimes referred to as CSS variables or cascading variables) are entities defined by CSS authors that contain specific values to be reused throughout a document. Complex websites have very large amounts of CSS, often with a lot of repeated values"
   },
   {
     page:7,
@@ -53,11 +57,13 @@ export const CategoriesApi=[
     page:9,
     title1:"SASS",
     title:"Import",
+    discription:"The @import directive allows you to include the content of one file in another. ... sass or . scss file. You can also import CSS files. The @import directive imports the file and any variables or mixins defined in the imported file can then be used in the main file."
   },
   {
     page:10,
     title1:"SASS",
     title:"Mixins",
+    discription:"Mixins allow you to define styles that can be re-used throughout your stylesheet. They make it easy to avoid using non-semantic classes like . ... A mixin's name can be any Sass identifier, and it can contain any statement other than top-level statements."
   },
   {
     page:11,
@@ -117,21 +123,28 @@ export const CategoriesApi=[
   },
   {
     page:21,
-    title1:"FIREBASE",
-    title:"Auth",
+    title1:"REACT",
+    title:"useContext",
+    video:<iframe width="840" height="472.5" src="https://www.youtube.com/embed/Zw_Pl0kHemI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+    discription:""
   },
   {
     page:22,
     title1:"FIREBASE",
-    title:"Database",
+    title:"Auth",
   },
   {
     page:23,
     title1:"FIREBASE",
-    title:"Storage",
+    title:"Database",
   },
   {
     page:24,
+    title1:"FIREBASE",
+    title:"Storage",
+  },
+  {
+    page:25,
     title1:"Codewars",
     title:"Kata 4",
     video:<iframe width="840" height="472.5" src="https://www.youtube.com/embed/TXbdlM9b5is" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,

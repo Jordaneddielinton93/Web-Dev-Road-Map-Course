@@ -1,11 +1,11 @@
 import signPost from "../../Images/signPost.png"
 import ButtonTakeStep from "../ButtonTakeStep/ButtonTakeStep";
+
+import { ACTION } from "../UseReducer/UseReducer";
 import Slider from "../Slider/Slider"
 import "./LandingPage.scss"
 
 
-
-import html from "../../Images/Html.jpg"
 const LandingPage = () => {
   return ( 
     <main className="LandingP">
@@ -30,7 +30,10 @@ const LandingPage = () => {
 
       </section>
       <section className="LandingP__Slider">
-        <Slider title="HTML" />
+
+        <Slider 
+        title="HTML" />
+
         <Slider title="Css" />
         <Slider title="React" />
         <Slider title="FireBase" />

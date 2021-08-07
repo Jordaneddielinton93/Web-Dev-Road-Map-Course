@@ -13,7 +13,7 @@ const CatagoriesSidebar = () => {
   class DropdownList{
     constructor(mainTag,subTag1,subTag2,subTag3,subTag4,subTag5,subTag6,
       // below this is the page numbers
-      pageSubTitle1,pageSubTitle2,pageSubTitle3,pageSubTitle4,pageSubTitle5
+      pageSubTitle1,pageSubTitle2,pageSubTitle3,pageSubTitle4,pageSubTitle5,pageSubTitle6
       ){
       this.mainTag=mainTag;
       this.subTag1=subTag1;
@@ -28,11 +28,12 @@ const CatagoriesSidebar = () => {
       this.pageSubTitle3=pageSubTitle3;
       this.pageSubTitle4=pageSubTitle4;
       this.pageSubTitle5=pageSubTitle5;
+      this.pageSubTitle6=pageSubTitle6;
 
     }
     makePage(){
       return(
-        <div className="catagoriesCont">
+        <div key={this.mainTag} className="catagoriesCont">
           <h2 className="catagoriesCont-title">{this.mainTag}</h2>
           <ul className="catagoriesCont__list" >
 
@@ -75,17 +76,17 @@ const CatagoriesSidebar = () => {
    // below this is the page numbers
    12,13,14,15
   )
-  let REACT  = new DropdownList("REACT","State","JSX","useState","useEffect","useReducer","",
+  let REACT  = new DropdownList("REACT","State","JSX","useState","useEffect","useReducer","useContext",
    // below this is the page numbers
-   16,17,18,19,20
+   16,17,18,19,20,21
   )
   let FIREBASE  = new DropdownList("Firebase","Auth","Database","Storage","","","",
    // below this is the page numbers
-   21,22,23
+   22,23,24
   )
   let CODEWARS  = new DropdownList("CodeWars","Kata6","","","","","",
    // below this is the page numbers
-  24
+  25
   )
 
   const DropDownToJSX = [HTML,CSS,SASS,JavaScript,REACT,FIREBASE,CODEWARS]
