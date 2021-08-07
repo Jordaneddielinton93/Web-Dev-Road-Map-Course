@@ -55,7 +55,9 @@ const Header = () => {
 
       <div className="header__SearchCont">
         <FcSearch className="header__SearchCont-icon"/>
-        <input type="text" className="header__SearchCont-Bar"/>
+        <input type="text" className="header__SearchCont-Bar"
+        placeholder="STILL WORKING ON THE J.S FOR THIS"
+        />
       </div>
 
 
