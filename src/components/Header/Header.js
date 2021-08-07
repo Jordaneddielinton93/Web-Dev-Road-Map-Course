@@ -15,7 +15,7 @@ const Header = () => {
 
       
       <h1 className="header__Logo">
-        <Link to ="./" style={{color:"black"}}>School Of Code</Link>
+        <Link to ="./" style={{color:"black"}}>JordLinton</Link>
         
       </h1>
       

@@ -104,8 +104,11 @@
       max-width: 100%;
       width: 100vw;
       &--image{
+        max-width: 100%;
         
+      &-img{
       display: none;
+      }
       }
       &__RoadMap{
         margin-left: 0;
