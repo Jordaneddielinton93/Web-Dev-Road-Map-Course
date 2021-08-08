@@ -56,10 +56,10 @@ const Header = () => {
           onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:18})}
           className="header__Dropdown__UList-li">React</li>
 
-          <li onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:21})}
+          <li onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:22})}
           className="header__Dropdown__UList-li">Firebase</li>
 
-          <li onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:24})}
+          <li onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:25})}
           className="header__Dropdown__UList-li">CodeWars</li>
           </Link>
         </ul>
@@ -71,7 +71,9 @@ const Header = () => {
          className="header__SearchCont-Bar"
         placeholder="STILL WORKING ON THE J.S FOR THIS"
         />
-        <div className="header__SearchCont__Query">
+        <div 
+        style={inputValue.length>=1?{display:"inline"}:{display:"none"}}
+        className="header__SearchCont__Query">
           {returnedSearch.length>=1?returnedSearch.map((query)=>{
             return(
               <Link to="./Categories">
