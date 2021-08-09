@@ -69,7 +69,7 @@ const Header = () => {
         <FcSearch className="header__SearchCont-icon"/>
         <input type="text" onChange={(e)=>setInputValue(e.target.value)}
          className="header__SearchCont-Bar"
-        placeholder="STILL WORKING ON THE J.S FOR THIS"
+        placeholder="Type a Topic"
         />
         <div 
         style={inputValue.length>=1?{display:"inline"}:{display:"none"}}

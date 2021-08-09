@@ -121,9 +121,27 @@
 
 @media only screen and (max-width: 1200px) {
   .header{
-    width: 100%;
+    width: 100vw;
+ 
+  }
+}
+@media only screen and (max-width: 900px) {
+  .header{
     &__SearchCont{
       display: none;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header{
+    &__Logo{
+      font-size: 1rem;
+    }
+    &__Dropdown__UList{
+      display: none;
+      & a{
+        display: none;
+      }
     }
   }
 }

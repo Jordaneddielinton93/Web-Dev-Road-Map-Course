@@ -56,7 +56,15 @@
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .Slider{
+    &__imgCont{
 
+      font-size: 1.8rem;
+   
+    }
+  }
+}
 @media only screen and (max-width: 600px) {
   .Slider{
     &__imgCont{

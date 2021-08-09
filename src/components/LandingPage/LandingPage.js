@@ -1,8 +1,9 @@
 import signPost from "../../Images/signPost.png"
 import ButtonTakeStep from "../ButtonTakeStep/ButtonTakeStep";
-
 import { ACTION } from "../UseReducer/UseReducer";
 import Slider from "../Slider/Slider"
+import greyback from "../../Images/greyback.png"
+
 import "./LandingPage.scss"
 
 
@@ -29,6 +30,20 @@ const LandingPage = () => {
 
 
       </section>
+
+      <section className="LandingP__Intro">
+        <div className="LandingP__Intro__ImgCont">
+          <img srcSet={greyback} alt="" />
+        </div>
+        <article className="LandingP__Intro__Paragraph">
+          <h3>Help me build this world!</h3>
+          <p>With time and dedication anything is possible, my plan is to help developers get their goal's quicker and more effectivly with all the resourse's and infomation gathered here <b>free</b> </p>
+        </article>
+
+      </section>
+
+      
+
       <section className="LandingP__Slider">
 
         <Slider title="HTML" />
@@ -36,6 +51,8 @@ const LandingPage = () => {
         <Slider title="React" />
         <Slider title="FireBase" />
       </section>
+
+      
 
     </main>
    );

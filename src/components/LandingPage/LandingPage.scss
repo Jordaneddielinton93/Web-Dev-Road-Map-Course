@@ -19,7 +19,6 @@
     align-items: center;
     height: 500px;
     width: 100%;
-    border-bottom: thick solid $lightGrey;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     &--image{
       display: flex;
@@ -49,6 +48,7 @@
       flex-direction: column;
       align-items: center;
       margin-left: 5vw;
+      border-radius: 20px;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
       justify-content: flex-end;
       height: 70%;
@@ -82,15 +82,45 @@
 
   }
 
+  &__Intro{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    &__ImgCont{
+      width: 45%;
+      height: 90%;
+      & img{
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+      }
+    }
+    &__Paragraph{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-size: 2rem;
+      width: 45%;
+      height: 90%;
+      & p{
+      font-style: italic;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
   &__Slider{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: $whiteGrey;
+    
     width: 100%;
     overflow-x: hidden;
     height: 300px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  
   }
 }
 
@@ -112,12 +142,21 @@
       }
       &__RoadMap{
         margin-left: 0;
+        &-title{
+          font-size: 2.5rem;
+
+        }
+        &-title2{
+          font-size: 2rem;
+
+        }
       }
     }
+    
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .LandingP{
     &__Hero{
       justify-content: center;
@@ -135,15 +174,37 @@
       }
       &__RoadMap{
         &-title{
-          font-size: 1rem;
+          font-size: 1.5rem;
 
         }
         &-title2{
-          font-size: 2rem;
+          font-size: 1rem;
 
         }
       }
        
+    }
+    &__Intro{
+      flex-direction: column;
+      height: auto;
+
+      &__ImgCont{
+        width: 70%;
+
+        & img{
+
+        }
+      }
+      &__Paragraph{
+        width: 90%;
+
+        font-size: 1rem;
+
+        & p{
+
+          font-size: 1rem;
+        }
+      }
     }
   }
 }
