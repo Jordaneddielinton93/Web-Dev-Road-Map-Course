@@ -14,7 +14,8 @@ const CategoriesItem = () => {
       CategoriesApi.map((item,index)=>{
 
       return item.page===stateObj.state.page_number?(
-        <main className="CategoriesItem">
+        <main key={index}
+        className="CategoriesItem">
           <h1 className="CategoriesItem--title">
             BEGINNER'S GUIDE: {item.title}
           </h1>

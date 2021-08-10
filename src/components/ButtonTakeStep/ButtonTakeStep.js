@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 const ButtonTakeStep = () => {
 
   return ( 
-    <Link to="./RoadMap"><button  className="ButtonTakeStep">
+    <Link to="./Categories"><button  className="ButtonTakeStep">
       Take Your Step
     </button></Link>
    );

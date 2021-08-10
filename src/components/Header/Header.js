@@ -102,7 +102,7 @@ const Header = () => {
       <FcCustomerSupport/>
       </div>
         <ul className="header__Dropdown__UList">
-          <li 
+          <li style={stateObj.state.userStatus?{display:"block"}:{display:"none"}}
           className="header__Dropdown__UList-li"
           onClick={()=>auth.signOut()}>
             Sign Out
