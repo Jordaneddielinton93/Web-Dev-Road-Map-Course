@@ -27,29 +27,43 @@
     &__UList{
       display: none;
       position: absolute;
-      top: 8vh;
+      top: 9vh;
+      height: 70vh;
       text-align: left;
       background-color: $lightGrey;
       cursor: pointer;
-    border: thin solid black;
+      border: thin solid black;
       border-top: 2px solid $darkGrey;
-    border-top: 2px solid $darkGrey;
-    &-li{
+      border-top: 2px solid $darkGrey;
       color: black;
-    }
-    
 
-
-
-      &-li{
+        &__Dev{
+          display: flex;
+          height: 44px;
+          &__List{
+          display: none;
+          
+          }
+      
+      }
+      & li{
         padding:10px;
+        width: 130px;
         &:hover{
-          border: thin solid $darkGrey;
+          color:$darkGrey;
+          border-bottom: thin solid $darkGrey ;
         }
       }
     }
     &:hover .header__Dropdown__UList{
       display:block ;
+      background-color: white;
+
+      &__Dev:hover .header__Dropdown__UList__Dev__List{
+
+        display: block;
+
+      }
     } 
   }
 
