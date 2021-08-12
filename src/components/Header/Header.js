@@ -6,6 +6,7 @@ import { auth } from "../../Lib/FireBase/FireBase";
 import { pageWrapper } from "../App/App";
 import { useContext, useEffect, useState } from "react";
 import SearchCategorie from "../SearchCategorie/SearchCategorie";
+import ChangePageButton from "../ChangePageButton/ChangePageButton";
 const Header = () => {
   
   let stateObj = useContext(pageWrapper)
@@ -34,35 +35,17 @@ const Header = () => {
       <div className="header__Dropdown">
         <Link to="./Categories">
           <p className="header__Dropdown__Categories">Categories</p>
+          <ul className="header__Dropdown__UList">
+            <ChangePageButton pageNum={0} title={"HTML"}/>
+            <ChangePageButton pageNum={4} title={"CSS"}/>
+            <ChangePageButton pageNum={8} title={"Sass"}/>
+            <ChangePageButton pageNum={12} title={"JavaScript"}/>
+            <ChangePageButton pageNum={18} title={"React"}/>
+            <ChangePageButton pageNum={22} title={"Firebase"}/>    
+            <ChangePageButton pageNum={25} title={"CodeWars"}/>
+          </ul>
         </Link> 
-        <ul className="header__Dropdown__UList">
-        <Link to="./Categories">
-          <li 
-          onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:0})}
-          className="header__Dropdown__UList-li">HTML</li>
-
-          <li
-          onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:4})}
-          className="header__Dropdown__UList-li">CSS</li>
-
-          <li onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:8})}
-          className="header__Dropdown__UList-li">Sass</li>
-
-          <li
-          onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:12})}
-          className="header__Dropdown__UList-li">JavaScript</li>
-
-          <li 
-          onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:18})}
-          className="header__Dropdown__UList-li">React</li>
-
-          <li onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:22})}
-          className="header__Dropdown__UList-li">Firebase</li>
-
-          <li onClick={()=>stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:25})}
-          className="header__Dropdown__UList-li">CodeWars</li>
-          </Link>
-        </ul>
+        
       </div>
 
       <div className="header__SearchCont">
