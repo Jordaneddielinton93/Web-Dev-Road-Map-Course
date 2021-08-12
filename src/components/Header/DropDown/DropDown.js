@@ -1,14 +1,19 @@
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import ChangePageButton from "../../ChangePageButton/ChangePageButton";
-import { IoMdArrowDropright,IoMdArrowDropdown } from 'react-icons/io';
+
 const DropDown = () => {
   return ( 
     <div className="header__Dropdown">
+<<<<<<< HEAD
         <div>
           <p className="header__Dropdown__Categories">Categories <IoMdArrowDropdown/> </p>
+=======
+        <Link to="./Categories">
+          <p className="header__Dropdown__Categories">Categories</p>
+>>>>>>> parent of 5ea13c0 (added arrows)
           <ul className="header__Dropdown__UList">
             <ol className="header__Dropdown__UList__Dev">
-              <li>Web Dev <IoMdArrowDropright/></li>
+              <li>Web Dev</li>
               <ul className="header__Dropdown__UList__Dev__List">
                 <ChangePageButton pageNum={0} title={"HTML"}/>
                 <ChangePageButton pageNum={4} title={"CSS"}/>
@@ -21,15 +26,17 @@ const DropDown = () => {
             </ol>
 
             <ol className="header__Dropdown__UList__Dev">
-            <li>BackEnd <IoMdArrowDropright/></li>
+            <li>BackEnd</li>
             </ol>
 
             <ol className="header__Dropdown__UList__Dev">
-            <li>ChatRoom <IoMdArrowDropright/></li>
+            <li>ChatRoom</li>
             </ol>
 
+            <ol className="header__Dropdown__UList__Dev">
+            <li></li>
+            </ol>
             
-
           </ul>
         </div>
       </div>
