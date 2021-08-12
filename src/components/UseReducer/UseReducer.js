@@ -22,7 +22,7 @@ export function reducer(state,action){
       }
 
     case ACTION.CHOOSEN_PAGE:
-      return{...state,
+      return{...state, 
         page_number:action.payload}
       
     default:
