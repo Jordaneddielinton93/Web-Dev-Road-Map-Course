@@ -4,7 +4,7 @@ import { IoMdArrowDropright,IoMdArrowDropdown } from 'react-icons/io';
 const DropDown = () => {
   return ( 
     <div className="header__Dropdown">
-        <Link to="./Categories">
+        <div>
           <p className="header__Dropdown__Categories">Categories <IoMdArrowDropdown/> </p>
           <ul className="header__Dropdown__UList">
             <ol className="header__Dropdown__UList__Dev">
@@ -31,8 +31,7 @@ const DropDown = () => {
             
 
           </ul>
-        </Link> 
-        
+        </div>
       </div>
    );
 }

@@ -2,8 +2,7 @@
 import { useEffect, useReducer } from "react";
 import { BrowserRouter as Router, Route , Switch} from "react-router-dom";
 import FireLoginStatus from "../../Lib/FireLoginStatus/FireLoginStatus";
-import Catagories from "../Catagories/Catagories";
-import Footer from "../Footer/Footer";
+import Categories from "../Catagories/Categories";
 import Header from "../Header/Header";
 import LandingPage from "../LandingPage/LandingPage";
 import RoadMap from "../RoadMap/RoadMap";
@@ -11,6 +10,7 @@ import Signin from "../Signin/Signin";
 import { ACTION, initState, reducer } from "../UseReducer/UseReducer";
 import React from "react";
 import './App.scss';
+import { CategoriesApi } from "../../CategoriesApi/CategoriesApi";
 
 export const pageWrapper = React.createContext()
 
@@ -38,9 +38,10 @@ function App() {
         <Route path="/signin" component={Signin} />
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/RoadMap" component={RoadMap} />
-        <Route exact path="/Categories" component={Catagories}/>
+        <Route exact path="/Categories" component={Categories}/>
+        {/* <Route path="/BackEnd" component={BackEnd}/> */}
       </Switch>
-      <Footer/>
+    
       </pageWrapper.Provider>
 
     </div>

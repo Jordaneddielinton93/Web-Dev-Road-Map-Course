@@ -7,7 +7,8 @@ export const ACTION={
 
 export const initState={
   userStatus:false,
-  page_number:0
+  page_number:0,
+  page_title:""
   
 }
 
@@ -23,7 +24,9 @@ export function reducer(state,action){
 
     case ACTION.CHOOSEN_PAGE:
       return{...state,
-        page_number:action.payload}
+        page_number:action.payload.pageNum,
+        page_title:action.payload.title
+      }
       
     default:
       break;
