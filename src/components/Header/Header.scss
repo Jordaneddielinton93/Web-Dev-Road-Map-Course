@@ -116,6 +116,10 @@
     color: white;
     background-color: black;
     cursor: pointer;
+    & a{
+    color: white;
+
+    }
   }
 
   &__profileImg{
