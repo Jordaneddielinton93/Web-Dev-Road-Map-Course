@@ -9,12 +9,12 @@ const history = useHistory();
   let stateObj = useContext(pageWrapper)
   return ( 
     
-    
+    <Link to={`./Categories#${title}`}>
     <li onClick={()=>{
       stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:pageNum})
 }}
-    className={classname}>{title}</li>
-    
+    >{title}</li>
+    </Link>
    );
 }
  

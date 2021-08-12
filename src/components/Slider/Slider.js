@@ -12,7 +12,7 @@ const Slider = ({pageNum,title}) => {
 
     <div onClick={()=>{stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:pageNum})}}
     className="Slider">
-      <Link to="./Categories">
+      <Link to={`./Categories#${title}`}>
       <section className="Slider__imgCont">
         {title}
       </section>
