@@ -5,14 +5,11 @@ import { ACTION } from "../UseReducer/UseReducer";
 import "./CatagoriesSidebar.scss"
 const CatagoriesSidebar = () => {
 
-  let stateObj = useContext(pageWrapper)
-
-  // let [openCat,SetOpenCat]=useState("none")
-
-  
+  // THIS COMPONENT JUST RENDERS A LIST OF Categories THAT OPEN THE RIGHT PAGE
 
   class DropdownList{
-    constructor(mainTag,subTag1,subTag2,subTag3,subTag4,subTag5,subTag6,
+    constructor(
+      mainTag,subTag1,subTag2,subTag3,subTag4,subTag5,subTag6,
       // below this is the page numbers
       pageNum1,pageNum2,pageNum3,pageNum4,pageNum5,pageNum6
       ){
@@ -23,7 +20,7 @@ const CatagoriesSidebar = () => {
       this.subTag4=subTag4;
       this.subTag5=subTag5;
       this.subTag6=subTag6;
-
+      // below this is the page numbers
       this.pageNum1=pageNum1;
       this.pageNum2=pageNum2;
       this.pageNum3=pageNum3;
@@ -92,7 +89,6 @@ const CatagoriesSidebar = () => {
       {DropDownToJSX.map((item)=>{
         return item.makePage()
       })}
-      
       
     </aside>
    );

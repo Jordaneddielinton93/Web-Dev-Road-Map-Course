@@ -7,7 +7,7 @@ export const ACTION={
 
 export const initState={
   userStatus:false,
-  page_number:17
+  page_number:0
   
 }
 
