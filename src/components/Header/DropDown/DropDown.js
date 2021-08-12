@@ -4,13 +4,13 @@ import ChangePageButton from "../../ChangePageButton/ChangePageButton";
 const DropDown = () => {
   return ( 
     <div className="header__Dropdown">
-<<<<<<< HEAD
-        <div>
-          <p className="header__Dropdown__Categories">Categories <IoMdArrowDropdown/> </p>
-=======
+
+        {/* <div>
+          <p className="header__Dropdown__Categories">Categories <IoMdArrowDropdown/> </p> */}
+
         <Link to="./Categories">
           <p className="header__Dropdown__Categories">Categories</p>
->>>>>>> parent of 5ea13c0 (added arrows)
+
           <ul className="header__Dropdown__UList">
             <ol className="header__Dropdown__UList__Dev">
               <li>Web Dev</li>
@@ -38,8 +38,10 @@ const DropDown = () => {
             </ol>
             
           </ul>
-        </div>
-      </div>
+        {/* </div> */}
+        
+    </Link>
+    </div>
    );
 }
  
