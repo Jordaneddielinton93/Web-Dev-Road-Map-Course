@@ -23,10 +23,10 @@ export function reducer(state,action){
       }
 
     case ACTION.CHOOSEN_PAGE:
-      return{...state,
-        page_number:action.payload.pageNum,
-        page_title:action.payload.title
-      }
+
+      return{...state, 
+        page_number:action.payload}
+
       
     default:
       break;
