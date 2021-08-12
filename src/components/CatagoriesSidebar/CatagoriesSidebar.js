@@ -90,6 +90,8 @@ const CatagoriesSidebar = () => {
         return item.makePage()
       })}
       
+
+      
     </aside>
    );
 }
