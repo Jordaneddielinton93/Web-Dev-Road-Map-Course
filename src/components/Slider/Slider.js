@@ -1,13 +1,17 @@
 import "./Slider.scss"
 import { BrowserRouter, Route, Link } from "react-router-dom";
-const Slider = ({title}) => {
+import { useContext } from "react";
+import { pageWrapper } from "../App/App";
+import { ACTION } from "../UseReducer/UseReducer";
+const Slider = ({pageNum,title}) => {
 
-
+  let stateObj = useContext(pageWrapper)
 
 
   return ( 
 
-    <div className="Slider">
+    <div onClick={()=>{stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:pageNum})}}
+    className="Slider">
       <Link to="./Categories">
       <section className="Slider__imgCont">
         {title}

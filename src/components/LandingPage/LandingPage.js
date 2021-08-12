@@ -46,10 +46,10 @@ const LandingPage = () => {
 
       <section className="LandingP__Slider">
 
-        <Slider title="HTML" />
-        <Slider title="Css" />
-        <Slider title="React" />
-        <Slider title="FireBase" />
+        <Slider title="HTML" pageNum={0} />
+        <Slider title="Css" pageNum={4} />
+        <Slider title="React" pageNum={18}/>
+        <Slider title="FireBase" pageNum={22}/>
       </section>
 
       

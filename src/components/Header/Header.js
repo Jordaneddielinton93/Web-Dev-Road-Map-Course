@@ -72,9 +72,7 @@ const Header = () => {
       <h1 className="header__Login"
       style={stateObj.state.userStatus?{display:"none"}:{display:"block"}}
       >
-        <Link to="/signin">
-        Login
-        </Link>
+        <Link to="/signin">Login</Link>
         
       </h1>
 
