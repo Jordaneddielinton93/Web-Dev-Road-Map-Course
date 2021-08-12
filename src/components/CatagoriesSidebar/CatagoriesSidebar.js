@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { pageWrapper } from "../App/App";
+import ChangePageButton from "../ChangePageButton/ChangePageButton";
 import { ACTION } from "../UseReducer/UseReducer";
 import "./CatagoriesSidebar.scss"
 const CatagoriesSidebar = () => {
@@ -13,7 +14,7 @@ const CatagoriesSidebar = () => {
   class DropdownList{
     constructor(mainTag,subTag1,subTag2,subTag3,subTag4,subTag5,subTag6,
       // below this is the page numbers
-      pageSubTitle1,pageSubTitle2,pageSubTitle3,pageSubTitle4,pageSubTitle5,pageSubTitle6
+      pageNum1,pageNum2,pageNum3,pageNum4,pageNum5,pageNum6
       ){
       this.mainTag=mainTag;
       this.subTag1=subTag1;
@@ -23,12 +24,12 @@ const CatagoriesSidebar = () => {
       this.subTag5=subTag5;
       this.subTag6=subTag6;
 
-      this.pageSubTitle1=pageSubTitle1;
-      this.pageSubTitle2=pageSubTitle2;
-      this.pageSubTitle3=pageSubTitle3;
-      this.pageSubTitle4=pageSubTitle4;
-      this.pageSubTitle5=pageSubTitle5;
-      this.pageSubTitle6=pageSubTitle6;
+      this.pageNum1=pageNum1;
+      this.pageNum2=pageNum2;
+      this.pageNum3=pageNum3;
+      this.pageNum4=pageNum4;
+      this.pageNum5=pageNum5;
+      this.pageNum6=pageNum6;
 
     }
     makePage(){
@@ -37,23 +38,17 @@ const CatagoriesSidebar = () => {
           <h2 className="catagoriesCont-title">{this.mainTag}</h2>
           <ul className="catagoriesCont__list" >
 
-            <li onClick={()=>
-              stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:this.pageSubTitle1})}>{this.subTag1}</li>
+              <ChangePageButton title={this.subTag1} pageNum={this.pageNum1} classname={""}/>
 
-            <li onClick={()=>
-              stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:this.pageSubTitle2})}>{this.subTag2}</li>
+              <ChangePageButton title={this.subTag2} pageNum={this.pageNum2} classname={""}/>
 
-            <li onClick={()=>
-              stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:this.pageSubTitle3})}>{this.subTag3}</li>
+              <ChangePageButton title={this.subTag3} pageNum={this.pageNum3} classname={""}/>
 
-            <li onClick={()=>
-              stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:this.pageSubTitle4})}>{this.subTag4}</li>
+              <ChangePageButton title={this.subTag4} pageNum={this.pageNum4} classname={""}/>
 
-            <li onClick={()=>
-              stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:this.pageSubTitle5})}>{this.subTag5}</li>
+              <ChangePageButton title={this.subTag5} pageNum={this.pageNum5} classname={""}/>
 
-            <li onClick={()=>
-              stateObj.dispatch({type:ACTION.CHOOSEN_PAGE,payload:this.pageSubTitle6})}>{this.subTag6}</li>
+              <ChangePageButton title={this.subTag6} pageNum={this.pageNum6} classname={""}/>
           </ul>
         </div>
       )
