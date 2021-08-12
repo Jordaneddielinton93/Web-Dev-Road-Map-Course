@@ -1,7 +1,5 @@
-import { useContext } from "react";
-import { pageWrapper } from "../App/App";
+
 import ChangePageButton from "../ChangePageButton/ChangePageButton";
-import { ACTION } from "../UseReducer/UseReducer";
 import "./CatagoriesSidebar.scss"
 import { CategoriesApi } from "../../CategoriesApi/CategoriesApi";
 const CatagoriesSidebar = () => {
@@ -12,21 +10,19 @@ const CatagoriesSidebar = () => {
       <div className="catagoriesCont">
         <ul className="catagoriesCont__list">
 
-          {CategoriesApi.map((item)=>{
-            console.log(lastItem)
-            
+          {CategoriesApi.map((item)=>{   
             if(lastItem.includes(item.title1)){
               shownTitle=""
-
             }else{
-              shownTitle=item.title1
+              shownTitle=<h1 className="catagoriesCont-title">{item.title1}</h1>
               lastItem.push(item.title1)
-            }
-          
-            return[
-              <h1 className="catagoriesCont-title">{shownTitle}</h1>,
-            <ChangePageButton title={item.title} pageNum={item.page}/>
-            ]
+            }   
+            return(
+              <>
+              {shownTitle}
+              <ChangePageButton title={item.title} pageNum={item.page}/>
+            </>
+            )
           })}
 
         </ul>
