@@ -84,13 +84,15 @@ export const CategoriesApi=[
     page:12,
     title1:"JavaScript",
     title:"Functions",
-    discription:"Functions allow you to define complex operations on SassScript values that you can re-use throughout your stylesheet. ... A function's name can be any Sass identifier. It can only contain universal statements, as well as the @return at-rule which indicates the value to use as the result of the function call."
+    discription:"Functions allow you to define complex operations on SassScript values that you can re-use throughout your stylesheet. ... A function's name can be any Sass identifier. It can only contain universal statements, as well as the @return at-rule which indicates the value to use as the result of the function call.",
+    video:<iframe width="90%" height="472.5" src="https://www.youtube.com/embed/xUI5Tsl2JpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   },
   {
     page:13,
     title1:"JavaScript",
     title:"DataTypes",
-    discription:"In Javascript, there are five basic, or primitive, types of data. The five most basic types of data are strings, numbers, booleans, undefined, and null. We refer to these as primitive data types."
+    discription:"In Javascript, there are five basic, or primitive, types of data. The five most basic types of data are strings, numbers, booleans, undefined, and null. We refer to these as primitive data types.",
+    video:<iframe width="90%" height="472.5" src="https://www.youtube.com/embed/O9by2KcR2v4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   },
   {
     page:14,

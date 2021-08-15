@@ -10,6 +10,7 @@ const CatagoriesSidebar = () => {
       <div className="catagoriesCont">
         <ul className="catagoriesCont__list">
 
+          {/* this map func places the title when loop changes */}
           {CategoriesApi.map((item)=>{   
             if(lastItem.includes(item.title1)){
               shownTitle=""
