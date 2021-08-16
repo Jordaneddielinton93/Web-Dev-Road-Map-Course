@@ -1,3 +1,4 @@
+const bullet= {listStyle:"decimal"}
 export const CategoriesApi=[
 
   {
@@ -187,9 +188,53 @@ export const CategoriesApi=[
   },
   {
     page:28,
-    title1:"SQL",
-    title:"SQL",
-    discription:[""]
+    title1:"PERN Stack",
+    title:"PERN",
+    discription:[<h3>what is a PERN Stack i here you ask</h3>,<br></br>,<br></br>,
+      "PERN stands for Postgres, Express, React, & Node in which i will be doing a basic guide on how to use ",<b>#disclamire</b>," i am learning this as i go along so if there are any errors do contact me ",<br></br>,<br></br>,
+      
+    ]
+  },
+  {
+    page:29,
+    title1:"PERN Stack",
+    title:"Installation",
+    discription:[<h3>we begin with a simple folder</h3>,<br></br>,<br></br>,
+      <p style={{fontSize:"1rem"}}>
+      <ol style={{textAlign:"left"}}>
+        <li style={bullet}>
+          Create a folder called <b> "nameOfYourProject"</b>
+        </li>
+
+        <br/>
+
+        <li style={bullet}>
+          Create a folder inside your project called <b> "Server"</b>
+        </li>
+
+        <br/>
+
+        <li style={bullet}>
+          Open a terminal inside of the <b>server</b> file and type:<br/><br/>
+          <b>
+          <i>npm init</i><br/>
+          <i>npm i express pg cors</i>
+          </b>
+        </li>
+        <br />
+        <li style={bullet}>
+          inside the server folder again create a file call "index.js" <br /><br />
+          now in the file index.js you will need to write the follwing code: <br /><br />
+          <b>
+          <i>const express = require("express")</i><br />
+          <i>const cors = require("corse")</i><br />
+          <i>const app = express()</i><br />
+          </b>
+        </li>
+
+      </ol>
+      </p>
+    ]
   },
 
 ]
