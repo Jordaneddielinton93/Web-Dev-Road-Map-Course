@@ -169,6 +169,28 @@ export const CategoriesApi=[
     discription:["Code Wars is a great way to level up your skills ranking from easy Kata8 to very hard kata 1, the most i have been able to do is a kata 4 which is on my youtube channel.",<br></br>,<br></br>,
     <i>Codewars is an educational community for computer programming. On the platform, software developers train on programming challenges known as kata. These discrete programming exercises train a range of skills in a variety of programming languages, and are completed within an online integrated development environment.</i>]
   },
+  {
+    page:26,
+    title1:"Codewars",
+    title:"Kata 6 part-1",
+    video:<iframe width="90%" height="472.5" src="https://www.youtube.com/embed/TXbdlM9b5is" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+    discription:["This code wars was part of my 10day challange just to help me understand basic concepts such as high order-array function aswell as one liners and turnery operator ",<br></br>,<br></br>,
+    <i>Codewars is an educational community for computer programming. On the platform, software developers train on programming challenges known as kata. These discrete programming exercises train a range of skills in a variety of programming languages, and are completed within an online integrated development environment.</i>]
+  },
+  {
+    page:27,
+    title1:"Codewars",
+    title:"Kata 6 part-2",
+    video:<iframe width="90%" height="472.5" src="https://www.youtube.com/embed/oDDY0qfuAYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+    discription:["Code Wars is a great way to level up your skills ranking from easy Kata8 to very hard kata 1, the most i have been able to do is a kata 4 which is on my youtube channel.",<br></br>,<br></br>,
+    <i>Codewars is an educational community for computer programming. On the platform, software developers train on programming challenges known as kata. These discrete programming exercises train a range of skills in a variety of programming languages, and are completed within an online integrated development environment.</i>]
+  },
+  {
+    page:28,
+    title1:"SQL",
+    title:"SQL",
+    discription:[""]
+  },
 
 ]
-
+// width="90%" height="472.5" on all video iframes 

@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import ChangePageButton from "../../ChangePageButton/ChangePageButton";
-
+import { FcNext } from 'react-icons/fc';
 const DropDown = () => {
   return ( 
     <div className="header__Dropdown">
@@ -13,7 +13,7 @@ const DropDown = () => {
 
           <ul className="header__Dropdown__UList">
             <ol className="header__Dropdown__UList__Dev">
-              <li>Web Dev</li>
+              <li>Web Dev <FcNext/></li>
               <ul className="header__Dropdown__UList__Dev__List">
                 <ChangePageButton pageNum={0} title={"HTML"}/>
                 <ChangePageButton pageNum={4} title={"CSS"}/>
@@ -26,11 +26,11 @@ const DropDown = () => {
             </ol>
 
             <ol className="header__Dropdown__UList__Dev">
-            <li>BackEnd</li>
+            <li>BackEnd <FcNext/></li>
             </ol>
 
             <ol className="header__Dropdown__UList__Dev">
-            <li>ChatRoom</li>
+            <li>ChatRoom <FcNext/></li>
             </ol>
 
             <ol className="header__Dropdown__UList__Dev">
