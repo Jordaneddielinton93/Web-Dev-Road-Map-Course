@@ -2,9 +2,9 @@ import { useContext } from "react";
 import { pageWrapper } from "../App/App";
 import { ACTION } from "../UseReducer/UseReducer";
 import { BrowserRouter, Route, Link } from "react-router-dom";
-import { useHistory } from 'react-router-dom';
+
 const ChangePageButton = ({pageNum,title}) => {
-const history = useHistory();
+// const history = useHistory();
 
   let stateObj = useContext(pageWrapper)
   return ( 
